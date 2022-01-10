@@ -7,14 +7,14 @@ steps:
 - name: build
   image: alpine
   volumes:
-  - name: mura.io
-    path: /mura.io
+  - name: mura
+    path: /mura
   commands:
   - cd mura.io
   - ls
 
 volumes:
-- name: mura.io
+- name: mura
   host:
     path: /var/www/mura.io
 ...
