@@ -1,0 +1,18 @@
+---
+kind: pipeline
+name: production
+
+steps:
+- name: build
+  image: node:16
+  volumes:
+  - name: mura.io
+    path: /mura.io
+  commands:
+  - npm --version
+
+volumes:
+- name: mura.io
+  host:
+    path: /var/www/mura.io
+...
