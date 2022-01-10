@@ -13,6 +13,8 @@ body {
   background-position: bottom;
   background-size: cover;
   font-family: "Readex Pro", monospace;
+  width: 800px;
+  margin: 0 auto;
 }
 
 header {
