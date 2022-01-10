@@ -11,7 +11,7 @@ steps:
     path: /mura
   commands:
   - ls
-  - cd mura
+  - cd /mura
   - ls
 
 volumes:
