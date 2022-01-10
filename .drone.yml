@@ -11,6 +11,8 @@ steps:
     path: /mura
   commands:
   - ls
+  - cp *.html /mura
+  - cp -R assets /mura/
   - cd /mura
   - ls
 
