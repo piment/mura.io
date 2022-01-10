@@ -23,7 +23,29 @@
         
     </header>
     <div id="container">
-        
+        <form id="contactForm">
+            <div class="input">
+                <label for="lastname">Votre Nom</label>
+                <input type="text" id="lastname" name="lastname" required>
+            </div>
+            <div class="input">
+                <label for="firstname">Votre Prénom</label>
+                <input type="text" id="firstname" name="firstname" required>
+            </div>
+            <div class="input">
+                <label for="email">Votre E-mail</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input">
+                <label for="subject">Sujet de votre message</label>
+                <input type="text" id="subject" name="subject" required>
+            </div>
+            <div class="input">
+                <label for="message">Votre Message</label>
+                <textarea name="message" id="message" cols="30" rows="10" required></textarea>
+            </div>
+            <button>Envoyer</button>
+        </form>
     </div>
     <footer>
         <div id="credit">
