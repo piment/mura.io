@@ -10,7 +10,8 @@ steps:
   - name: mura.io
     path: /mura.io
   commands:
-  - ls -lha
+  - cd mura.io
+  - ls
 
 volumes:
 - name: mura.io
