@@ -1,15 +1,16 @@
 ---
 kind: pipeline
+type: docker
 name: production
 
 steps:
 - name: build
-  image: node:16
+  image: alpine
   volumes:
   - name: mura.io
     path: /mura.io
   commands:
-  - npm --version
+  - ls -lha
 
 volumes:
 - name: mura.io
