@@ -182,6 +182,35 @@ header nav ul li a:hover {
   color: #c2ee24;
 }
 
+#icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0 0 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  color: #c2ee24;
+}
+.icon:hover {
+  color: #fff;
+}
+
+.icon2 {
+  width: 100px;
+  height: 60px;
+  margin: 0 5px;
+  color: #c2ee24;
+  margin-top: -15px;
+  margin-left: -10px;
+}
+.icon2:hover {
+  color: #fff;
+}
+
 #container {
   max-width: 800px;
   padding: 40px 20px;
