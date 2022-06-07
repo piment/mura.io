@@ -5,7 +5,7 @@ name: production
 
 steps:
   - name: build
-    image: node:6
+    image: node
     volumes:
       - name: mura
         path: /mura
