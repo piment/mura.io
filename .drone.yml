@@ -12,7 +12,7 @@ steps:
     commands:
       - npm install
       - npm run build
-      - rm -rf /mura/
+      - rm -rf mura/
       - cp -r dist/ /mura/
       - cd /mura
       - ls
