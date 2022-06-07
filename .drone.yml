@@ -1,0 +1,20 @@
+---
+kind: pipeline
+type: docker
+name: production
+
+steps:
+  - name: build
+    image: alpine
+    volumes:
+      - name: mura
+        path: /mura
+    commands:
+      - npm run build
+      - cp -r /dist /mura
+      - cd /mura
+
+volumes:
+  - name: mura
+    host:
+      path: /var/www/mura.io
