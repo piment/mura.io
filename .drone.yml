@@ -12,6 +12,7 @@ steps:
     commands:
       - npm install
       - npm run build
+      - ls
       - cp -r /dist /mura
       - cd /mura
 
