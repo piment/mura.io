@@ -12,9 +12,10 @@ steps:
     commands:
       - npm install
       - npm run build
-      - ls
-      - cp -r dist/ /mura
+      - rm -rf /mura/
+      - cp -r dist/ /mura/
       - cd /mura
+      - ls
 
 volumes:
   - name: mura
