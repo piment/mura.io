@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Readex+Pro:wght@200;400;500&display=swap');
+nav {
+  width: 800px;
+  margin: 20px 0 0 0;
+}
+nav ul {
+  display: flex;
+  border-top: 1px solid #c2ee24;
+  border-bottom: 1px solid #c2ee24;
+  width: 100%;
+  height: 30px;
+  list-style: none;
+  padding: 0;
+  justify-content: space-evenly;
+  align-items: center;
+}
+nav ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+nav ul li a:hover {
+  color: #c2ee24;
+}
+
+@media screen and (max-width: 600px) {
+  header h1 {
+    font-size: 3em !important;
+  }
+  header .baseline {
+    font-size: 1em !important;
+  }
+
+  nav {
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+  }
+  nav ul {
+    flex-direction: column;
+  }
+}
+.card {
+  max-width: 740px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.card .cardBody {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.card .cardBody .cardTitle {
+  color: #c2ee24;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: normal;
+  font-size: 1.2em;
+  align-self: center;
+  width: 100%;
+  text-align: center;
+}
+.card .cardBody .desc {
+  font-style: italic;
+  font-weight: lighter;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.card .cardBody .projectLink {
+  align-self: center;
+  margin-top: auto;
+  padding-top: 20px;
+}
+.card .cardBody .techno .title {
+  font-weight: normal;
+  color: #c2ee24;
+}
+.card img {
+  border-radius: 0 3px 3px 0;
+  margin-left: auto;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 100vw;
+  color: #eeeeee;
+  text-align: center;
+  min-height: 100vh;
+  background-image: linear-gradient(to bottom, #5a614e, #0000005e),
+    url('src/assets/img/bg_2.jpg');
+  background-attachment: fixed;
+  background-position: top left;
+  background-size: cover;
+  font-family: 'Readex Pro', monospace;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  header .baseline {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header h1 {
+  font-family: 'Major Mono Display', monospace;
+  font-size: 5em;
+  padding: 0;
+  margin: 20px 0;
+  font-weight: normal;
+  text-shadow: 0px 3px 5px #3c5832;
+  color: #fff;
+}
+header .HeaderSep {
+  width: 600px;
+  display: inline-block;
+  border-bottom: 1px solid #c2ee24;
+  margin-bottom: 20px;
+}
+header .baseline {
+  font-family: 'Readex Pro', monospace;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  padding: 0;
+  margin: 0;
+  font-weight: lighter;
+  text-shadow: 0px 2px 3px #000000c0;
+}
+
+#icons {
+  display: flex;
+  margin: 15px 0 0 0;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 0 5px;
+  color: #c2ee24;
+}
+.icon:hover {
+  color: #fff;
+}
+
+.icon2 {
+  width: 100px;
+  height: 60px;
+  margin: 0 5px;
+  color: #c2ee24;
+  margin-top: -15px;
+  margin-left: -10px;
+}
+.icon2:hover {
+  color: #fff;
+}
+
+#container {
+  max-width: 800px;
+  padding: 40px 20px;
+  margin: 0 auto 50px auto;
+  text-align: left;
+  font-weight: 300;
+  border-bottom: 1px solid #c2ee24;
+}
+
+#skillLink {
+  text-align: center;
+  margin-top: 30px;
+  font-style: italic;
+}
+
+a {
+  color: #c2ee24;
+  text-decoration: none;
+}
+a:hover {
+  color: #3c5832;
+}
+
+.active {
+  color: #c2ee24;
+}
+
+footer {
+  margin: 20px;
+}
+footer .copyright {
+  font-size: 0.8em;
+  font-weight: 300;
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+#contactForm .input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  width: 300px;
+}
+#contactForm .input label {
+  margin-bottom: 5px;
+  font-weight: 300;
+}
+#contactForm button {
+  background-color: #c2ee24;
+  padding: 5px 30px;
+  border-style: none;
+  border-radius: 10px;
+  margin-top: 20px;
+  color: #3c5832;
+  font-weight: 600;
+}
+#contactForm button:hover {
+  box-shadow: 0px 0px 5px #c2ee24;
+}
+#contactForm button:active {
+  background-color: #3c5832;
+}
