@@ -10,6 +10,7 @@ steps:
       - name: mura
         path: /mura
     commands:
+      - npm install
       - npm run build
       - cp -r /dist /mura
       - cd /mura
