@@ -1,0 +1,48 @@
+.card {
+  max-width: 740px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .cardBody {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+
+    .cardTitle {
+      color: #c2ee24;
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-weight: normal;
+      font-size: 1.2em;
+      align-self: center;
+      width: 100%;
+      text-align: center;
+    }
+
+    .desc {
+      font-style: italic;
+      font-weight: lighter;
+      margin-bottom: 15px;
+      width: 100%;
+    }
+
+    .projectLink {
+      align-self: center;
+      margin-top: auto;
+      padding-top: 20px;
+    }
+
+    .techno .title {
+      font-weight: normal;
+      color: #c2ee24;
+    }
+  }
+
+  img {
+    border-radius: 0 3px 3px 0;
+    margin-left: auto;
+  }
+}

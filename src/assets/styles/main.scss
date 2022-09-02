@@ -1,85 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Readex+Pro:wght@200;400;500&display=swap');
-nav {
-  width: 800px;
-  margin: 20px 0 0 0;
-}
-nav ul {
-  display: flex;
-  border-top: 1px solid #c2ee24;
-  border-bottom: 1px solid #c2ee24;
-  width: 100%;
-  height: 30px;
-  list-style: none;
-  padding: 0;
-  justify-content: space-evenly;
-  align-items: center;
-}
-nav ul li a {
-  color: #eeeeee;
-  text-decoration: none;
-}
-nav ul li a:hover {
-  color: #c2ee24;
-}
+@import './nav.scss';
 
 @media screen and (max-width: 600px) {
-  header h1 {
-    font-size: 3em !important;
-  }
-  header .baseline {
-    font-size: 1em !important;
+  header {
+    h1 {
+      font-size: 3em !important;
+    }
+    .baseline {
+      font-size: 1em !important;
+    }
   }
 
   nav {
     width: 100%;
     height: 10px;
     overflow: hidden;
+
+    ul {
+      flex-direction: column;
+    }
   }
-  nav ul {
-    flex-direction: column;
-  }
-}
-.card {
-  max-width: 740px;
-  display: flex;
-  margin-bottom: 20px;
-  border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.5);
-}
-.card .cardBody {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-  width: 100%;
-}
-.card .cardBody .cardTitle {
-  color: #c2ee24;
-  text-transform: uppercase;
-  margin-bottom: 10px;
-  font-weight: normal;
-  font-size: 1.2em;
-  align-self: center;
-  width: 100%;
-  text-align: center;
-}
-.card .cardBody .desc {
-  font-style: italic;
-  font-weight: lighter;
-  margin-bottom: 15px;
-  width: 100%;
-}
-.card .cardBody .projectLink {
-  align-self: center;
-  margin-top: auto;
-  padding-top: 20px;
-}
-.card .cardBody .techno .title {
-  font-weight: normal;
-  color: #c2ee24;
-}
-.card img {
-  border-radius: 0 3px 3px 0;
-  margin-left: auto;
 }
 
 *,
